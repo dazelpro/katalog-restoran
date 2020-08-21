@@ -1,6 +1,7 @@
-import 'regenerator-runtime'; /* for async await transpile */
+import 'regenerator-runtime';
 import '../styles/main.css';
 import '../styles/responsive.css';
+// Fetch data json
 import ('../DATA.json').then(({default: jsonData}) => {
     console.log(jsonData)
     let datas = jsonData['restaurants']
@@ -23,6 +24,7 @@ import ('../DATA.json').then(({default: jsonData}) => {
     document.querySelector('#tes').innerHTML = dataList;  
 });
 
+// Menu
 const menu = document.querySelector('#menu');
 const hero = document.querySelector('.hero');
 const main = document.querySelector('main');
