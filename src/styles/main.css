@@ -18,35 +18,6 @@ body {
     color: #424242;
 }
 
-
-/* Header */
-.header {
-    min-height: 56px;
-    transition: min-height 0.3s;
-}
-
-.header__inner {
-    width: 100%;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.header__title {
-    font-weight: 300;
-    font-size: 4em;
-    margin: 0.5em 0.25em;
-    display: inline-block;
-    color: #212121;
-}
-
-.header__menu {
-    font-size: 32px;
-    margin: 10px auto;
-    display: block;
-    width: 30px;
-}
-
 /* Navigation */
 .menumob{
     background-color: #135ea8;
@@ -165,23 +136,15 @@ body {
 }
 
 
-/* Main */
+/* Layout */
 main {
     width: 100%;
     margin: 0 auto;
 }
 
-/*
- * content
- */
-
 .content {
     padding: 32px;
 }
-
-/*
-* latest
-*/
 
 .latest {
     width: 100%;
@@ -197,18 +160,11 @@ main {
 }
 
 
-/*
- * post
- */
-
+/* List Resto */
 .list {
     margin: 32px auto auto;
     text-align: left;
 }
-
-/*
- * post item
- */
 
 .list_item {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -260,9 +216,7 @@ main {
     line-height: 1.5em;
 }
 
-/*
-* footer
-*/
+/* Footer */
 
 footer {
     background-color: #135ea8;
@@ -271,22 +225,4 @@ footer {
     padding: 2em;
     width: 100%;
     text-align: center;
-}
-
-footer ul {
-    margin: 0 auto;
-    display: inline-block;
-}
-
-footer li {
-    display: inline-block;
-    margin: 0 1em;
-    font-size: 14px;
-}
-
-footer a {
-    display: inline-block;
-    padding: 1.3em;
-    text-decoration: none;
-    color: #fff
 }
