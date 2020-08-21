@@ -23,9 +23,10 @@
         transform: translate(0, 0);
     }
 
-    .nav__item {
+    .navitems {
         display: list-item;
         border-bottom: 1px solid #E0E0E0;
+        color: black !important;
         width: 100%;
         text-align: left;
     }
@@ -80,8 +81,8 @@
 }
 
 @media screen and (min-width: 800px) {
-    .nav__list {
-        max-width: 800px;
+    .navlist {
+        /* max-width: 800px; */
         margin: 0 auto;
     }
 }

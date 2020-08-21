@@ -55,25 +55,35 @@ body {
 /*
  * Top level navigation
  */
-
 .nav {
+    background-color: #135ea8;
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+    display: flex;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
 }
 
-.nav__list {
-    width: 100%;
+.navlist {
+    width: 80%;
     padding: 0;
     margin: 0;
+    text-align: right;
 }
-
-.nav__item {
+.logo {
+    width: 20%;
+    padding: 0;
+    margin: 0;
+    text-align: left;
     box-sizing: border-box;
     display: inline-block;
-    width: 24%;
-    text-align: center;
+    line-height: 24px;
+}
+
+.navitems {
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: right;
     line-height: 24px;
     text-transform: uppercase;
 }
@@ -82,12 +92,11 @@ body {
     display: inline-block;
     padding: 1.3em;
     text-decoration: none;
-    color: #616161;
+    color:white !important;
 }
 
 .nav a:hover {
-    text-decoration: underline;
-    color: #000;
+    text-decoration: none;
 }
 
 
@@ -101,23 +110,22 @@ body {
     min-height: 380px;
     width: 100%;
     text-align: center;
-    /* background-image: url("../images/hero.jpg"); */
     background-position: center;
-    background-color: green;
+    background-color: Black !important;
 }
 
-.hero__inner {
+.heroinner {
     margin: 0 auto;
     max-width: 800px;
 }
 
-.hero__title {
+.herotitle {
     color: #fff;
     font-weight: 500;
     font-size: 36px;
 }
 
-.hero__tagline {
+.herosubtitle {
     color: #fff;
     margin-top: 16px;
     font-size: 18px;
@@ -282,7 +290,9 @@ main {
  */
 
 footer {
-    background-color: #2c3e50;
+    background-color: #135ea8;
+    color:white;
+    font-size: 14px;
     padding: 2em;
     width: 100%;
     text-align: center;
