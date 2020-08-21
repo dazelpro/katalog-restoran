@@ -176,6 +176,18 @@ main {
     width: 100%;
     border-radius: 5px;
     overflow: hidden;
+    position: relative;
+}
+
+.city {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    border-radius: 5px;
+    background-color: #135ea8;
+    padding:5px 10px 5px;
+    color: white;
+    font-weight: 500;
 }
 
 .list_item_content {
