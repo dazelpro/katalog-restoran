@@ -14,16 +14,12 @@ body, html {
 }
 
 body {
-    /* font-family: "Roboto", sans-serif; */
     font-size: 12px;
     color: #424242;
 }
 
-/*
- * Header
- *
- */
 
+/* Header */
 .header {
     min-height: 56px;
     transition: min-height 0.3s;
@@ -51,10 +47,7 @@ body {
     width: 30px;
 }
 
-
-/*
-* Top level navigation
-*/
+/* Navigation */
 .menumob{
     background-color: #135ea8;
     color: white !important;
@@ -142,10 +135,7 @@ body {
     text-decoration: none;
 }
 
-/*
-* Jumbotron
-*/
-
+/* Jumbroton Image */
 .hero {
     display: flex;
     align-items: center;
@@ -175,10 +165,7 @@ body {
 }
 
 
-/*
- * main
- */
-
+/* Main */
 main {
     width: 100%;
     margin: 0 auto;
@@ -193,84 +180,28 @@ main {
 }
 
 /*
- * headline
- */
-
-.headline__figure {
-    width: 100%;
-}
-
-.headline__figure img {
-    width: 100%;
-}
-
-.headline__figure figcaption {
-    text-align: center;
-    color: #666666;
-    font-size: 13px;
-    font-weight: 400;
-    margin-top: 8px;
-}
-
-.headline__content {
-    width: 100%;
-    padding: 16px 0;
-}
-
-.headline__title {
-    font-size: 24px;
-    font-weight: 500;
-}
-
-.headline__description {
-    font-size: 12px;
-    margin-top: 12px;
-}
-
-.headline__button {
-    /* font-family: "Roboto", sans-serif; */
-    text-transform: uppercase;
-    margin-top: 24px;
-    cursor: pointer;
-    padding: 8px 16px;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    background-color: #2c3e50;
-    transition: opacity 0.3s;
-}
-
-.headline__button:hover {
-    opacity: 0.8;
-}
-
-/*
- * latest
- */
+* latest
+*/
 
 .latest {
     width: 100%;
-    margin: 60px auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
     text-align: center;
 }
 
-.latest__label {
-    font-size: 32px;
-    font-weight: lighter;
+.latest h1 {
+    font-weight: 700;
+    font-size: 2em;
+    margin-bottom: 50px;
 }
 
-.latest__label::after {
-    content: '';
-    margin-top: 16px;
-    display: block;
-    border-bottom: 1px solid #eeeeee;
-}
 
 /*
  * post
  */
 
-.posts {
+.list {
     margin: 32px auto auto;
     text-align: left;
 }
@@ -279,50 +210,52 @@ main {
  * post item
  */
 
-.post-item {
+.list_item {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     width: 100%;
     border-radius: 5px;
     overflow: hidden;
 }
 
-.post-item__content {
+.list_item_content {
     padding: 16px;
 }
 
-.post-item__thumbnail {
+.list_item_thumb {
     width: 100%;
+    max-height: 200px;
 }
 
-.post-item__date {
-    font-size: 10px;
+.list_item_rating {
+    font-size: 12px;
     text-transform: uppercase;
     color: #999;
+    font-weight: 500;
 }
 
-.post-item__date__author {
+.list_item_rating_value {
     color: red;
     text-decoration: none;
 }
 
-.post-item__title {
+.list_item_title {
     font-weight: 500;
     font-size: 16px;
-    margin-top: 16px;
+    margin-top: 10px;
     transition: 0.3s opacity;
 }
 
-.post-item__title:hover {
+.list_item_title:hover {
     opacity: 0.5;
 }
 
-.post-item__title a {
+.list_item_title a {
     text-decoration: none;
     color: inherit;
 }
 
-.post-item__description {
-    margin-top: 16px;
+.list_item_desc {
+    margin-top: -30px;
     font-size: 12px;
     line-height: 1.5em;
 }
