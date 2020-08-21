@@ -3,18 +3,33 @@
     grid-row-gap: 16px;
 }
 
+@media screen and (min-width: 500px) {
+    .menumob{
+        display: none;
+    }
+    .navmob{
+        display: none;
+    }
+}
+
 @media screen and (max-width: 499px) {
     .nav {
         z-index: 10;
         background-color: #fff;
         width: 300px;
         position: absolute;
-
-        /* This trasform moves the drawer off canvas. */
         -webkit-transform: translate(-300px, 0);
         transform: translate(-300px, 0);
+        transition: transform 0.3s ease;
+    }
 
-        /* Optionally, we animate the drawer. */
+    .navmob {
+        z-index: 10;
+        background-color: #fff;
+        width: 100%;
+        position: absolute;
+        -webkit-transform: translate(-100%, 0);
+        transform: translate(-100%, 0);
         transition: transform 0.3s ease;
     }
 
@@ -25,7 +40,12 @@
 
     .navitems {
         display: list-item;
-        border-bottom: 1px solid #E0E0E0;
+        color: black !important;
+        width: 100%;
+        text-align: left;
+    }
+    .navitemsmob {
+        display: list-item;
         color: black !important;
         width: 100%;
         text-align: left;
