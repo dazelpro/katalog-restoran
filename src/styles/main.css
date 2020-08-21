@@ -54,7 +54,10 @@ body {
     text-transform: uppercase;
     color: white !important;
 }
-
+.iconmenu a {
+    text-decoration: none;
+    color: white !important;
+}
 .navmob a {
     display: inline-block;
     padding: 1.3em;
@@ -124,15 +127,17 @@ body {
 
 .herotitle {
     color: #fff;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 36px;
+    text-shadow: 1px 1px #141414;
 }
 
 .herosubtitle {
     color: #fff;
     margin-top: 16px;
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 600;
+    text-shadow: 1px 1px #141414;
 }
 
 
@@ -225,4 +230,21 @@ footer {
     padding: 2em;
     width: 100%;
     text-align: center;
+}
+
+/* Skip to content */
+.skip-link {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    background-color: #bf1722;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    z-index: 100;
+    text-decoration: none;
+}
+  
+.skip-link:focus {
+    top: 100px;
 }
